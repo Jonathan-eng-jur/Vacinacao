@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "140f263f-df63-4172-b8da-a4e3843c0dff",
+		"name": "ZUP Vacinacao",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cadastro Usuário",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"nome\":\"Jonathan Cavalcanti\",\r\n    \"email\":\"jow_le@hotmail.com\",\r\n    \"cpf\":\"34738706845\",\r\n    \"dataNascimento\":\"1993-07-04\"\r\n   }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080\\usuario\\",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuario",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vacinação",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeVacina\": \"Buntantan\",\r\n    \"usuarioEmail\":\"jow_le@hotmail.com\",\r\n    \"dataAplicacao\": \"2020-03-09\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080\\vacinacao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vacinacao"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
